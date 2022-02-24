@@ -2,7 +2,7 @@ import { styled } from "../styles/styles.js";
 
 const Section = styled("section", {
   display: "flex",
-  flexDirection: "column",
+  // flexDirection: "column",
   justifyContent: "center",
   variants: {
     color: {
