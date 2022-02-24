@@ -1,5 +1,4 @@
 import { styled } from "../styles/styles.js";
-import PatternImage from "./PatternImage";
 
 const HeroSection = styled("div", {
   backgroundImage: "url(img/patterns/welcome.svg)",
@@ -67,7 +66,7 @@ const HeroText = styled("div", {
 
 const Hero = () => {
   return (
-    <HeroSection>
+    <>
       <HeroText>
         <HeroHeading>
           Upptäck <em>städer</em> på ett nytt sätt
@@ -79,7 +78,7 @@ const Hero = () => {
         </HeroDescription>
       </HeroText>
       <HeroImage />
-    </HeroSection>
+    </>
   );
 };
 

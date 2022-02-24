@@ -1,6 +1,6 @@
 import { styled } from "../styles/styles.js";
 import WhiteCard from "./UI/WhiteCard";
-import PatternImage from "./PatternImage";
+import { Intuitivt } from "./patterns/Intuitivt";
 
 const WhiteCardsSection = styled("div", {
   display: "grid",
@@ -30,9 +30,6 @@ const Title = styled("h3", {
 const Effektivisera = () => {
   return (
     <>
-      <PatternImage full="true">
-        <img src="/img/patterns/Intuitivt.svg" alt="Booiq Pattern" />
-      </PatternImage>
       <Caption style={{ color: "#6b6b6b" }}>INTUITIVT.ANPASSAT.ENKELT</Caption>
       <Title style={{ color: "#f6f6f6" }}>
         <em>Effektivisera</em> din kommersiella forvaltning.

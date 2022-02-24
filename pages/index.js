@@ -13,22 +13,44 @@ import Skala from "../components/Skala";
 import Cta from "../components/Cta";
 import Footer from "../components/Footer";
 
-const OverlappingSection = styled("section", {
-  display: "grid",
-  background: "#141317",
-  padding: "48px",
-  justifyContent: "center",
-  textAlign: "center",
-  fontSize: "20px",
-  color: "#d8d8d8",
-  marginTop: "-160px",
-  paddingTop: "200px",
-  "@medium": { marginLeft: "0px", marginRight: "0px" },
-});
+import { Welcome } from "../components/patterns/Welcome";
+import { Intuitivt } from "../components/patterns/Intuitivt";
+
+// const OverlappingSection = styled("section", {
+//   display: "grid",
+//   background: "#141317",
+//   padding: "48px",
+//   justifyContent: "center",
+//   textAlign: "center",
+//   fontSize: "20px",
+//   color: "#d8d8d8",
+//   marginTop: "-160px",
+//   paddingTop: "200px",
+
+// });
 const Page = styled("main", {
   display: "grid",
   // justifyContent: "center",
   gap: "100px",
+});
+
+const SectionContent = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  flex: 1,
+  width: "100%",
+  maxWidth: 1280,
+  padding: "32px 32px",
+  alignItems: "center",
+  textAlign: "center",
+  "@md": { padding: "64px 64px" },
+  variants: {
+    justify: {
+      center: {
+        alignItems: "center",
+      },
+    },
+  },
 });
 
 const Home = () => {
@@ -37,21 +59,35 @@ const Home = () => {
     <>
       <Page>
         <Header />
-        <Hero />
-        <OverlappingSection>
-          <Effektivisera />
-        </OverlappingSection>
         <Section>
-          <Partners />
+          <SectionContent>
+            <Hero />
+          </SectionContent>
+        </Section>
+        <Section color="black">
+          <SectionContent justify="center">
+            <Effektivisera />
+          </SectionContent>
         </Section>
         <Section>
-          <Tillsammans />
+          <SectionContent>
+            <Partners />
+          </SectionContent>
         </Section>
         <Section>
-          <HowSection />
+          <SectionContent>
+            <Tillsammans />
+          </SectionContent>
         </Section>
         <Section>
-          <Skala />
+          <SectionContent>
+            <HowSection />
+          </SectionContent>
+        </Section>
+        <Section>
+          <SectionContent>
+            <Skala />
+          </SectionContent>
         </Section>
         {/* <Section>
           <Cta />

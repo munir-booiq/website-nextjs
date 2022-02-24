@@ -3,9 +3,13 @@ import { styled } from "../styles/styles.js";
 const Section = styled("section", {
   display: "flex",
   flexDirection: "column",
-  padding: "0 10vw",
-  "@medium": {
-    margin: "0px 0px",
+  justifyContent: "center",
+  variants: {
+    color: {
+      black: {
+        backgroundColor: "#141317",
+      },
+    },
   },
 });
 export default Section;
